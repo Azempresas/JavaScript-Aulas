@@ -36,3 +36,18 @@ console.log(calcular(190, 5, "*"));
 console.log(calcular(190, 5, "/"));
 
 
+function gerarSenha(n){
+  let caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let senha = "";
+  for(let i=0; i<n ; i++){
+    let indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+    senha += caracteres[indiceAleatorio];
+  }
+  return senha;
+}
+  console.log(gerarSenha(8));
+  console.log(gerarSenha(10));
+  console.log(gerarSenha(15));
+
+
+
