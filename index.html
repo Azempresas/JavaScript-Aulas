@@ -23,7 +23,13 @@
   Fale com Venon!</button></p>
   
 <h3>Gerador de Senhas</h3>
-  
+<label for="tamanho">Digite o tamanho da senha:</label>
+<input type="number" id="tamanho" min="1" value="8"> 
+
+<button onclick="gerarSenha()">Gerar Senha</button>
+
+<h2>Sua senha:</h2>
+<p id="senha"></p>
   
   <script src="main.js"></script>
 </body>
