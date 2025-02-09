@@ -1,0 +1,14 @@
+body {
+    font-size: 15pt;
+    background-color: #181818
+}
+h2 {
+  color: #836fff;
+}
+button {
+  background-color: #836FFF;
+  color: #ffffff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+}
