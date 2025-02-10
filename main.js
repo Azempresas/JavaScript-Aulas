@@ -35,19 +35,32 @@ console.log(calcular(190, 5, "-"));
 console.log(calcular(190, 5, "*"));
 console.log(calcular(190, 5, "/"));
 
+//Função gerarSenha
 
-function gerarSenha(n){
+function gerarSenha(n) {
   let caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let senha = "";
-  for(let i=0; i<n ; i++){
-    let indiceAleatorio = Math.floor(Math.random() * caracteres.length);
-    senha += caracteres[indiceAleatorio];
+
+  for (let i = 0; i < n; i++) {
+      let indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+      senha += caracteres[indiceAleatorio];
   }
+
   return senha;
 }
-  console.log(gerarSenha(8));
-  console.log(gerarSenha(10));
-  console.log(gerarSenha(15));
 
+// Função para gerar a senha e exibi-la no HTML
+function gerarSenhaHTML() {
+  let tamanho = document.getElementById("tamanho").value; // Pega o valor do input
+  tamanho = Number(tamanho); // Converte para número
+
+  if (tamanho < 1) {
+      document.getElementById("resultado").innerText = "Digite um número válido!";
+      return;
+  }
+
+  let senhaGerada = gerarSenha(tamanho); // Chama a função gerarSenha()
+  document.getElementById("resultado").innerText = senhaGerada; // Exibe a senha na página
+}
 
 
