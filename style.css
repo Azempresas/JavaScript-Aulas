@@ -13,5 +13,11 @@ button {
   color: #ffffff;
   border: 0;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 5px;
+}
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 0;background-color: #4e4e4e;
+  color: aquamarine;
 }
