@@ -63,4 +63,34 @@ function gerarSenhaHTML() {
   document.getElementById("resultado").innerText =  senhaGerada; // Exibe a senha na página
 }
 
+//Notas da faculdade, Venon é ruim! 
+
+function verificarNota() {
+  let nota = Number(document.getElementById("nota").value);
+  let resultadoweb = document.getElementById("resultadoweb");
+  if( nota < 0 || nota > 10) {
+    resultadoweb.innerText = "Nota inválida, digite uma nota entre 0 e 10";
+    return;
+  }
+    let mensagemnotas = "Sua Nota é: " + nota + " <br>";
+    if(nota > 6 ) {
+      mensagemnotas += "Aprovado, pode passar do Venon 🎉\n"; 
+    }else if (nota >=5 ) {
+      mensagemnotas += "Recuperação, Venon está de olho em você 👀 \n";
+    } else {
+      mensagemnotas += "Reprovado, Venon vai devorar você até as tripas! ❌\n";
+    }
+    switch (Math.floor(nota)) {
+      case 10: mensagemnotas += "Aprovado com louvor"; break;
+      case 9: mensagemnotas += "Aprovado com louvor"; break;
+      case 8: mensagemnotas += "Aprovado com distinção"; break;
+      case 7: mensagemnotas += "Aprovado com distinção"; break;
+      case 6:mensagemnotas += "Aprovado"; break;
+      case 5: mensagemnotas += "Recuperação"; break;
+      default: mensagemnotas += "Reprovado";
+  }
+ resultadoweb.innerHTML = mensagemnotas;
+}
+
+
 
