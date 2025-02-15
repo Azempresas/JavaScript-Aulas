@@ -6,11 +6,11 @@ idade = Number(idade);
 let mensagem = "";
 
 if(idade<=12){
-  mensagem = "Muito Joven";
+  mensagem = "Muito Joven, Venon vai te perdoar";
 }else if(idade>=12 && idade<=17){
-mensagem ="Espera um pouco";
+mensagem ="Venon vai deixar passar desta vez";
 }else{
-  mensagem ="Devora ele, ate as tripas";
+  mensagem ="passou os 18, venon vai te devorar ate as tripas";
 }
 alert(mensagem);
 }
