@@ -60,7 +60,7 @@ function gerarSenhaHTML() {
   }
 
   let senhaGerada = gerarSenha(tamanho); // Chama a função gerarSenha()
-  document.getElementById("resultado").innerText = senhaGerada; // Exibe a senha na página
+  document.getElementById("resultado").innerText =  senhaGerada; // Exibe a senha na página
 }
 
 
