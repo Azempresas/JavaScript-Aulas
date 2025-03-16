@@ -92,12 +92,10 @@ function verificarNota() {
  resultadoweb.innerHTML = mensagemnotas;
 }
 
-function iniciarJogo() {
-  let numeroSecreto = Math.floor(Math.random() * 20 ) + 1;
-  let tentativa = 0;
-  let palpitesErrados = [];
-  let acertou = false;
+function jogarNovamente() {
+  return confirm("Deseja jogar novamente?");
 }
+
 
 
 
