@@ -96,8 +96,11 @@ function jogarNovamente() {
   return confirm("Deseja jogar novamente?");
 }
 
+function verificarIdadeMotorista(){
+  let idadeMotorista = Number(document.getElementById('idadeM').value);
+  let resultadoM = document.getElementById('rwsultadoM')
+}
 
 
-
-
+console.log(idadeM);
 
