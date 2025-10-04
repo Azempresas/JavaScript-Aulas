@@ -96,20 +96,21 @@ function jogarNovamente() {
   return confirm("Deseja jogar novamente?");
 }
 //verificar motorista 
-function verificarIdadeMotorista(){
-  let idadeM = Number(document.getElementById('idadeMotorista').value);
-  let resultadoM = document.getElementById('resultadoMotorista')
-
-  if(idadeM>=18) {
-  resultadoMotorista.innerText = 'ok';
- } else {
-    resultadoMotorista.innerText = 'nao';
+function verificarBoludo(){
+  let idadeBoludo = Number(document.getElementById("idadeB").value);
+  let resultadoBoludo = document.getElementById("resultadoBoludo");
+  
+  if(idadeBoludo>=18){
+    
+    resultadoBoludo.innerText = "ok";
+  }else {
+    resultadoBoludo.innerText = "nao"
   }
   
   
   
+  
 }
- 
-console.log(idadeM);
 
+console.log(verificarBoludo);
 
