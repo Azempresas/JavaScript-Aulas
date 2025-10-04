@@ -95,12 +95,21 @@ function verificarNota() {
 function jogarNovamente() {
   return confirm("Deseja jogar novamente?");
 }
-
+//verificar motorista 
 function verificarIdadeMotorista(){
-  let idadeMotorista = Number(document.getElementById('idadeM').value);
-  let resultadoM = document.getElementById('rwsultadoM')
+  let idadeM = Number(document.getElementById('idadeMotorista').value);
+  let resultadoM = document.getElementById('resultadoMotorista')
+
+  if(idadeM>=18) {
+  resultadoMotorista.innerText = 'ok';
+ } else {
+    resultadoMotorista.innerText = 'nao';
+  }
+  
+  
+  
 }
-
-
+ 
 console.log(idadeM);
+
 
