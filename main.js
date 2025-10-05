@@ -100,17 +100,11 @@ function verificarBoludo(){
   let idadeBoludo = Number(document.getElementById("idadeB").value);
   let resultadoBoludo = document.getElementById("resultadoBoludo");
   
-  if(idadeBoludo>=18){
-    
-    resultadoBoludo.innerText = "ok";
-  }else {
-    resultadoBoludo.innerText = "nao"
+  if (idadeBoludo>=18) {
+    resultadoBoludo.innerText = "✅ Você pode dirigir 🚗";
+  } else {
+    resultadoBoludo.innerText = "❌ Você ainda não pode dirigir."
   }
-  
-  
-  
-  
 }
 
-console.log(verificarBoludo);
 
