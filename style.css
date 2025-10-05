@@ -35,3 +35,15 @@ input {
   box-sizing: border-box;
 
 }
+
+.container-form {
+  display: flex; /* Habilita o Flexbox no contêiner */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  width: 70%; /* Define a largura do contêiner */
+}
+.item-form {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  margin: 10px 0;
+}

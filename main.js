@@ -125,6 +125,11 @@ function verificarNotaFae() {
       mensagemnotaFae += "Reprovado, Venon vai devorar você até as tripas! ❌\n";
      }
   resultadoFae.innerHTML = mensagemnotasFae;
-
-  
+     }
+     //formulário que vai mostrar as váriaveis em tela
+     function mostrarDados() {
+      let nome = document.getElementById("nome").value;
+      let sobrenome = document.getElementById("sobrenome").value;
+      let resultadoVariaveis = document.getElementById("resultadoVariaveis");
+      resultadoVariaveis.innerText = "Nome Completo: " + nome + " " + sobrenome; 
      }
