@@ -7,25 +7,22 @@
 
   <title>HTML</title>
   
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
   
 
 </head>
 
 <body>
-  
 
-  
-  <h2>JavaScript with Venon
+   <h1 style="text-align: center;" >Aulas de JavaScript </h1>
+  <div class="container">
+  <div class="coluna"> <h2>JavaScript with Venon
 </h2>Venon é um personagem fictício, um simbionte alienígena da Marvel Comics. O personagem apareceu pela primeira vez em The Amazing Spider.
   <p><button onClick=verificarIdade()>
-  Fale com Venon!</button></p>
-  
-<h3>Gerador de Senhas</h3>
+  Fale com Venon!</button></p> </div>
+
+
+  <div class="coluna"> <h2>Gerador de Senhas</h2>
 <label for="tamanho">Digite o tamanho da senha:</label>
     <input type="number" id="tamanho" min="1" value="8"> 
     
@@ -33,28 +30,22 @@
     <br/><br/> 
     Sua Senha: <spam id="resultado"></spam>
 
-    <h3> Verificação de Notas para ver se Venon devora o aluno</h3>
-  <lavel for="nota"> Digite sua nota:</lavel>
-  <input type="number" id="nota" min="0" max="10" value="0">
-  <button onclick="verificarNota()">Verificar</button>
-  <p id="resultadoweb"></p>
+     </div>
 
-<hr>
-  <!--Tab to edit-->
-</hr>
-<h2>Setembro
-</h2>
-Voltando a estudar Javascritp com manipulação da DOM
 
-<h2>Verificar se pode dirigir 
+
+  <div class="coluna"> <h2>Verificar se pode dirigir 
 </h2><br/>
 <label>
 Digite sua idade</label>
 <input type="number" id="idadeB" style="width: 50px;">
 <button onclick="verificarBoludo()">Verificar</button>
 <p id="resultadoBoludo"> </p>
+ </div>
+  
 
-<br/> <br/>
+  <div class="coluna">    
+
 <!-- Inicio da Nota HTML FAE -->
 <h2>Notas da Faculdade</h2>
 <p>Este é um verificador de notas da faculdade FAE </p>
@@ -63,7 +54,16 @@ Digite sua idade</label>
 <button onclick="verificarNotaFae()">Verificar</button>       
 <p id="resultadoFae"></p>
   <!-- Fim do HTML da nota FAE-->
+ </div>
 
+ <div class="coluna"> <h2> Notas para ver se Venon devora o aluno</h2>
+  <lavel for="nota"> Digite sua nota:</lavel>
+  <input type="number" id="nota" min="0" max="10" value="0">
+  <button onclick="verificarNota()">Verificar</button>
+  <p id="resultadoweb"></p> </div>
+  <div class="coluna"> outro </div>
+
+</div>
 
   <script src="main.js"></script>
 </body>
