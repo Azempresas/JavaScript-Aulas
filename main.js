@@ -107,4 +107,24 @@ function verificarBoludo(){
   }
 }
 
+//Notas da Faculdade FAE
+function verificarNotaFae() {
+  let notaFae = Number(document.getElementById("notaFae").value);
+  let resultadoFae = document.getElementById("resultadoFae");
+  if( notaFae < 0 || notaFae > 10) {
+    resultadoFae.innerText = "Nota inválida, digite uma nota entre 0 e 10";
+    return;
+  }
+    let mensagemnotasFae = "Sua Nota é: " + notaFae + " <br>";
+    if(notaFae > 6 ) {
+      mensagemnotasFae += "Aprovado, pode passar do Venon 🎉\n"; 
+    }else if (notaFae >=5 ) {
+      mensagemnotasFae += "Recuperação, Venon está de olho em você 👀 \n";
+    }
+     else{
+      mensagemnotaFae += "Reprovado, Venon vai devorar você até as tripas! ❌\n";
+     }
+  resultadoFae.innerHTML = mensagemnotasFae;
 
+  
+     }
