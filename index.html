@@ -88,11 +88,13 @@ Digite sua idade</label>
 <div class="coluna"> 
 <h2>
 Descubra a estação do ano</h2>
-<input type="number" min="0" placeholder="Digite o mês">
-<button onclick="verificaEstacao">
-  <!--Tab to edit-->
-</button>
-
+Verifique o mês e descubra a estação do ano correspondente.
+<br/><br/>
+<label for="mes">Digite o número do mês:</label>
+<input type="number" id="mes" min="0" placeholder="Digite o mês">
+<button onclick="verificarEstacao()">
+Verificar Estação</button>
+<p id="resultadoMes"></p>
 </div>
 <div class="coluna"> 1</div>
 <div class="coluna"> 1</div>

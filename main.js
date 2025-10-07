@@ -133,3 +133,29 @@ function verificarNotaFae() {
       let resultadoVariaveis = document.getElementById("resultadoVariaveis");
       resultadoVariaveis.innerText = "Nome Completo: " + nome + " " + sobrenome; 
      }
+
+     //Verifica a estação do ano conforme os numeros inserido no campo type number
+     function verificarEstacao() {
+      let mes = Number(document.getElementById("mes").value);
+      let resultadoMes = document.getElementById("resultadoMes");
+      let estacao = "";
+      if ( mes < 1 || mes > 12 ) {
+        resultadoMes.innerText = "Mes inválido, digite um número entre 1 e 12";
+        return;
+
+      } else if ( mes === 12 || mes === 1 || mes === 2 ) {
+        estacao = "Verão ☀️";
+
+      } else if ( mes >=3 && mes <= 5 ) {
+        estacao = "Outono 🍂";
+      } else if ( mes >=6 && mes <= 8 )  {
+        estacao = "Inverno ❄️";
+
+      } else {
+        estacao = "Primavera 🌸";
+      } 
+      resultadoMes.innerText = "A estação do ano é: " + estacao; 
+      }
+      //fim do codigo que verifica estaçao do ano. 
+
+      
