@@ -30,7 +30,7 @@
     
     <button onclick="gerarSenhaHTML()">Gerar Senha</button>
     <br/><br/> 
-    Sua Senha: <spam id="resultado"></spam>
+    Sua Senha: <spam id="resultadoS"></spam>
 
      </div>
 
@@ -96,8 +96,23 @@ Verifique o mês e descubra a estação do ano correspondente.
 Verificar Estação</button>
 <p id="resultadoMes"></p>
 </div>
-<div class="coluna"><h2>
-Calcule seu Desconto</h2>
+<div class="coluna"><h2> Calcule seu Desconto</h2>
+  Calcule o valor com desconto com base no tipo de cliente.
+  <br/><br/>
+  <label>Valor da compra: R$</label>
+  <input type="number" id="valor"><br><br>
+  <label>Tipo de Cliente:</label>
+  <select id="tipo" class="tipo">
+    <option value="">Selecione...</option>
+    <option value="padrao">10%</option>
+    <option value="vip">12%</option>
+    <option value="funcionario">15%</option>
+  </select>
+  <br/><br/>
+  <button onClick="calcularDesconto()">Calcular Desconto </button>
+  <p id="resultadoDesconto"></p>
+  
+
 </div>
 <div class="coluna"> 1</div>
 

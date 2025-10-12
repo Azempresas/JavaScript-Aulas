@@ -60,7 +60,7 @@ function gerarSenhaHTML() {
   }
 
   let senhaGerada = gerarSenha(tamanho); // Chama a função gerarSenha()
-  document.getElementById("resultado").innerText =  senhaGerada; // Exibe a senha na página
+  document.getElementById("resultadoS").innerText =  senhaGerada; // Exibe a senha na página
 }
 
 //Notas da faculdade, Venon é ruim! 
@@ -158,4 +158,30 @@ function verificarNotaFae() {
       }
       //fim do codigo que verifica estaçao do ano. 
 
-      
+      //Clacule se desconto conforme o tipo de cliente
+      function calcularDesconto() {
+        let valor = Number(document.getElementById("valor").value);
+        let tipo = document.getElementById("tipo").value;
+        let resultadoDesconto = document.getElementById("resultadoDesconto");
+       
+        if( valor <=0 || tipo === "" ) {
+          resultadoDesconto.innerText = "❌ Preencha todos os campos corretamente.";
+          return;
+        }
+        let desconto = 0;
+
+      switch (tipo) {
+        case "padrao":
+          desconto = 10;
+          break;
+        case "vip":
+          desconto = 12;
+          break;
+        case "funcionario":
+          desconto = 15;
+          break;
+      }
+
+      const valorFinal = valor - (valor * desconto / 100);
+      resultadoDesconto.innerText = `💰 Desconto de ${desconto}% aplicado. Valor final: R$ ${valorFinal.toFixed(2)}`;
+    }
