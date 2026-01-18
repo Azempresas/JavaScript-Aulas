@@ -200,4 +200,8 @@ function verificarNotaFae() {
         resultadoLogin.innerText = "✅ Login bem-sucedido! Bem-vindo ao sistema.";
         resultadoLogin.style.color = "green";
       }
+      else {
+        resultadoLogin.innerText = "❌ Acesso negado!";
+        resultadoLogin.style.color = "red";
+      }
     }
