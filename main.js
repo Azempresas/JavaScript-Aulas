@@ -185,3 +185,19 @@ function verificarNotaFae() {
       const valorFinal = valor - (valor * desconto / 100);
       resultadoDesconto.innerText = `💰 Desconto de ${desconto}% aplicado. Valor final: R$ ${valorFinal.toFixed(2)}`;
     }
+
+
+    //Sistema de Login Simples
+
+    function verificaLogin() {
+      const senhaLogin = document.getElementById("senhaLogin").value;
+      const resultadoLogin = document.getElementById("resultadoLogin");
+
+      if ( senhaLogin === "" ) {
+        resultadoLogin.innerText = "❌ Por favor, insira sua senha.";
+        return;
+      } else if ( senhaLogin === "venon123" ) {
+        resultadoLogin.innerText = "✅ Login bem-sucedido! Bem-vindo ao sistema.";
+        resultadoLogin.style.color = "green";
+      }
+    }
