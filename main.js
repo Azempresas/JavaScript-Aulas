@@ -192,6 +192,7 @@ function verificarNotaFae() {
     function verificaLogin() {
       const senhaLogin = document.getElementById("senhaLogin").value;
       const resultadoLogin = document.getElementById("resultadoLogin");
+      
 
       if ( senhaLogin === "" ) {
         resultadoLogin.innerText = "❌ Por favor, insira sua senha.";

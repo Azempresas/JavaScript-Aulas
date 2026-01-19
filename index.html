@@ -14,118 +14,106 @@
 
 <body>
 
-   <h1 style="text-align: center;" >Aulas de JavaScript </h1>
+  <h1 style="text-align: center;">Aulas de JavaScript</h1>
+  
   <div class="container">
-  <div class="coluna"> <h2>JavaScript with Venon
-</h2>Venon é um personagem fictício, um simbionte alienígena da Marvel Comics. O personagem apareceu pela primeira vez em The Amazing Spider.
-  <p><button onClick=verificarIdade()>
-  Fale com Venon!</button></p> </div>
 
+    <div class="coluna">
+      <h2>Sistema de Login</h2>
+      Sistema de login simples que verifica as credenciais do usuário.
+      <br/><br/>
+      <input type="password" id="senhaLogin" placeholder="Digite sua Senha">
+      <button onClick="verificaLogin()">Login</button>
+      <p id="resultadoLogin"></p>
+    </div>
 
-  <div class="coluna"> <h2>Gerador de Senhas</h2>
-    ️Esse é um gerador de senhas simples, que cria senhas aleatórias com base no tamanho especificado pelo usuário.
-    <br/><br/>
-<label for="tamanho">Digite o tamanho da senha:</label>
-    <input type="number" id="tamanho" min="1" value="8"> 
-    
-    <button onclick="gerarSenhaHTML()">Gerar Senha</button>
-    <br/><br/> 
-    Sua Senha: <spam id="resultadoS"></spam>
+    <div class="coluna">
+      <h2>Calcule seu Desconto</h2>
+      Calcule o valor com desconto com base no tipo de cliente.
+      <br/><br/>
+      <label>Valor da compra: R$</label>
+      <input type="number" id="valor"><br><br>
+      <label>Tipo de Cliente:</label>
+      <select id="tipo" class="tipo">
+        <option value="">Selecione...</option>
+        <option value="padrao">10%</option>
+        <option value="vip">12%</option>
+        <option value="funcionario">15%</option>
+      </select>
+      <br/><br/>
+      <button onClick="calcularDesconto()">Calcular Desconto</button>
+      <p id="resultadoDesconto"></p>
+    </div>
 
-     </div>
+    <div class="coluna">
+      <h2>Descubra a estação do ano</h2>
+      Verifique o mês e descubra a estação do ano correspondente.
+      <br/><br/>
+      <label for="mes">Digite o número do mês:</label>
+      <input type="number" id="mes" min="0" placeholder="Digite o mês">
+      <button onclick="verificarEstacao()">Verificar Estação</button>
+      <p id="resultadoMes"></p>
+    </div>
 
+    <div class="coluna">
+      <h2>Variáveis</h2>
+      <div class="container-form">
+        <div class="item-form"><label>Nome:</label></div>
+        <div class="item-form"><input type="text" id="nome"></div>
+        <div class="item-form"><label>Sobrenome:</label></div>
+        <div class="item-form"><input type="text" id="sobrenome"></div>
+        <div class="item-form"></div>
+        <div class="item-form"><button onclick="mostrarDados()">Mostrar Dados</button></div>
+        <div class="item-form"><p id="resultadoVariaveis"></p></div>
+      </div>
+    </div>
 
+    <div class="coluna">
+      <h2>JavaScript with Venon</h2>
+      Venon é um personagem fictício, um simbionte alienígena da Marvel Comics. O personagem apareceu pela primeira vez em The Amazing Spider.
+      <p><button onClick="verificarIdade()">Fale com Venon!</button></p>
+    </div>
 
-  <div class="coluna"> <h2>Verificar se pode dirigir 
-</h2><br/>Esse é um verificador de idade para saber se você pode dirigir ou não.
-  <br/><br/>
+    <div class="coluna">
+      <h2>Gerador de Senhas</h2>
+      Esse é um gerador de senhas simples, que cria senhas aleatórias com base no tamanho especificado pelo usuário.
+      <br/><br/>
+      <label for="tamanho">Digite o tamanho da senha:</label>
+      <input type="number" id="tamanho" min="1" value="8">
+      <button onclick="gerarSenhaHTML()">Gerar Senha</button>
+      <br/><br/>
+      Sua Senha: <span id="resultadoS"></span> </div>
 
-<label>
-Digite sua idade</label>
-<input type="number" id="idadeB">
-<button onclick="verificarBoludo()">Verificar</button>
-<p id="resultadoBoludo"> </p>
- </div>
-  
+    <div class="coluna">
+      <h2>Verificar se pode dirigir</h2>
+      <br/>Esse é um verificador de idade para saber se você pode dirigir ou não.
+      <br/><br/>
+      <label>Digite sua idade</label>
+      <input type="number" id="idadeB">
+      <button onclick="verificarBoludo()">Verificar</button>
+      <p id="resultadoBoludo"></p>
+    </div>
 
-  <div class="coluna">    
-
-<!-- Inicio da Nota HTML FAE -->
-<h2>Notas da Faculdade</h2>
+    <div class="coluna">
+      <h2>Notas da Faculdade</h2>
       Esse é um verificador de notas para saber se você passou ou não na FAE.
-<br/><br/>
-<label for="notaFae">Digite sua nota:</label>
-<input type="number" id="notaFae"  value="0">
-<button onclick="verificarNotaFae()">Verificar</button>       
-<p id="resultadoFae"></p>
-  <!-- Fim do HTML da nota FAE-->
- </div>
+      <br/><br/>
+      <label for="notaFae">Digite sua nota:</label>
+      <input type="number" id="notaFae" value="0">
+      <button onclick="verificarNotaFae()">Verificar</button>
+      <p id="resultadoFae"></p>
+    </div>
 
- <div class="coluna"> <h2> Notas para ver se Venon devora o aluno</h2>
-  Esse é um verificador de notas para saber se você passou ou não.
-  <br/><br/>
+    <div class="coluna">
+      <h2>Notas para ver se Venon devora o aluno</h2>
+      Esse é um verificador de notas para saber se você passou ou não.
+      <br/><br/>
+      <form>
+      <label for="nota">Digite sua nota:</label> <input type="number" id="nota" value="0">
+      <button onclick="verificarNota()">Verificar</button>
+      <p id="resultadoweb"></p></form>
+    </div>
 
-  <lavel for="nota"> Digite sua nota:</lavel>
-  <input type="number" id="nota"  value="0">
-  <button onclick="verificarNota()">Verificar</button>
-  <p id="resultadoweb"></p> </div>
-  
-  
-  <div class="coluna"> 
-  <h2>Variaveis  </h2>
-  
-  <div class="container-form">
-<div class="item-form">  <label>Nome:</label>   </div>
-<div class="item-form">   <input type="text" id="nome">  </div>
-<div class="item-form">   <label>Sobrenome:</label>  </div>
-<div class="item-form">   <input type="text" id="sobrenome">  </div>
-<div class="item-form">    </div>
-<div class="item-form"> <button onclick="mostrarDados()">Mostrar Dados</button> </div>
-<div class="item-form"> <p id="resultadoVariaveis"></p> </div>
-</div>
-</div>
-
-<div class="coluna"> 
-<h2>
-Descubra a estação do ano</h2>
-Verifique o mês e descubra a estação do ano correspondente.
-<br/><br/>
-<label for="mes">Digite o número do mês:</label>
-<input type="number" id="mes" min="0" placeholder="Digite o mês">
-<button onclick="verificarEstacao()">
-Verificar Estação</button>
-<p id="resultadoMes"></p>
-</div>
-<div class="coluna"><h2> Calcule seu Desconto</h2>
-  Calcule o valor com desconto com base no tipo de cliente.
-  <br/><br/>
-  <label>Valor da compra: R$</label>
-  <input type="number" id="valor"><br><br>
-  <label>Tipo de Cliente:</label>
-  <select id="tipo" class="tipo">
-    <option value="">Selecione...</option>
-    <option value="padrao">10%</option>
-    <option value="vip">12%</option>
-    <option value="funcionario">15%</option>
-  </select>
-  <br/><br/>
-  <button onClick="calcularDesconto()">Calcular Desconto </button>
-  <p id="resultadoDesconto"></p>
-  
-
-</div>
-<div class="coluna"><h2>Sistema de Login</h2>
-Sistema de login simples que verifica as credenciais do usuário.
-<br/><br/>
-<input type="password" id="senhaLogin" placeholder="Digite sua Senha">
-<button onClick="verificaLogin()">Login</button>
-<p id="resultadoLogin"></p>
-
-</div>
-
-
-</div>
-
-  <script src="main.js"></script>
+  </div> <script src="main.js"></script>
 </body>
 </html>
