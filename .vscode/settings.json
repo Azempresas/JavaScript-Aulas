@@ -1,0 +1,11 @@
+{"workbench.colorCustomizations": {
+    // Cor para arquivos modificados (M)
+    "gitDecoration.modifiedResourceForeground": "#f1f1f1",
+    // Cor para arquivos novos/não rastreados (U ou A)
+    "gitDecoration.untrackedResourceForeground": "#00FF00",
+    // Cor para arquivos deletados
+    "gitDecoration.deletedResourceForeground": "#f1f1f1",
+    // Cor para arquivos com conflito
+    "gitDecoration.conflictingResourceForeground": "#f1f1f1"
+}
+}
