@@ -206,3 +206,8 @@ function verificarNotaFae() {
         resultadoLogin.style.color = "red";
       }
     }
+
+    // Sistema de Semaforo
+    function controlarTransito() {
+      
+    }
