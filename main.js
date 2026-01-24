@@ -214,8 +214,19 @@ function verificarNotaFae() {
       //transforar todo o texto em minuscula
       cor = cor.toLowerCase();
       //selecionar os circulos
-      let luz = document.getElementById(luz);
+      let luz = document.getElementById("luz");
       let mensagemSemaforo = document.getElementById("mensagemTransito");
 
       
-    }
+
+      //treinando agora o if e else
+        if(cor === "vermelho") {
+          mensagemSemaforo.innerText = "⛔ Pare!";
+          
+        } else if (cor === "amarelo") {
+          mensagemSemaforo.innerText = "⚠️ Atenção!";
+          
+        } else if (cor === "verde") {
+          mensagemSemaforo.innerText = "✅ Pode seguir!";
+
+    
