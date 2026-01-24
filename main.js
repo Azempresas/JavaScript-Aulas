@@ -229,4 +229,6 @@ function verificarNotaFae() {
         } else if (cor === "verde") {
           mensagemSemaforo.innerText = "✅ Pode seguir!";
 
-    
+        }
+
+      }
