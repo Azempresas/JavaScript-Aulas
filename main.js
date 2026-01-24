@@ -208,7 +208,15 @@ function verificarNotaFae() {
     }
 
     // Sistema de Semaforo
+
+    
+
+
     function controlarTransito() {
+
+      
+
+
       //pegar a cor digitada no input
       let cor = document.getElementById("corSemaforo").value;
       //transforar todo o texto em minuscula
@@ -221,14 +229,33 @@ function verificarNotaFae() {
 
       //treinando agora o if e else
         if(cor === "vermelho") {
+          luz.style.backgroundColor = "red";
           mensagemSemaforo.innerText = "⛔ Pare!";
+          mensagemSemaforo.style.color = "red";
           
         } else if (cor === "amarelo") {
+          luz.style.backgroundColor = "yellow";
           mensagemSemaforo.innerText = "⚠️ Atenção!";
+          mensagemSemaforo.style.color = "yellow";
           
         } else if (cor === "verde") {
+          luz.style.backgroundColor = "green";
           mensagemSemaforo.innerText = "✅ Pode seguir!";
+          mensagemSemaforo.style.color = "green";
 
+        } else {
+          mensagemSemaforo.innerText = "❌ Cor inválida! Use vermelho, amarelo ou verde.";
+          mensagemSemaforo.style.color = "white";
         }
 
       }
+
+      const inputSemaforo = document.getElementById("corSemaforo");
+
+      inputSemaforo.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+        // 4. Se foi Enter, chama a função de controlar o trânsito
+        controlarTransito();
+        
+    }
+});
