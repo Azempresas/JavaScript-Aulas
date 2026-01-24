@@ -209,5 +209,13 @@ function verificarNotaFae() {
 
     // Sistema de Semaforo
     function controlarTransito() {
+      //pegar a cor digitada no input
+      let cor = document.getElementById("corSemaforo").value;
+      //transforar todo o texto em minuscula
+      cor = cor.toLowerCase();
+      //selecionar os circulos
+      let luz = document.getElementById(luz);
+      let mensagemSemaforo = document.getElementById("mensagemTransito");
+
       
     }
