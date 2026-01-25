@@ -259,3 +259,9 @@ function verificarNotaFae() {
         
     }
 });
+
+//Transformar Heroi 
+
+function alterarHeroi() {
+
+}
